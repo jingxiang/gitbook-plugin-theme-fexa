@@ -1,27 +1,27 @@
 {
-  "name": "gitbook-plugin-theme-xinbeitime",
-  "author": {
-    "name": "kalman03"
-  },
-  "bugs": {
-    "url": "https://github.com/jingxiang/gitbook-plugin-theme-fexa/issues"
-  },
-  "dependencies": {},
-  "description": "Gitbook theme for xinbeitime docs",
-  "engines": {
-    "gitbook": ">=3.0.0"
-  },
-  "homepage": "https://github.com/jingxiang/gitbook-plugin-theme-fexa#readme",
-  "keywords": [
-    "gitbook",
-    "theme",
-    "xinbeitime"
-  ],
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jingxiang/gitbook-plugin-theme-fexa.git"
-  },
-  "scripts": {},
-  "version": "1.0.2"
+    "name": "gitbook-plugin-theme-xinbeitime",
+    "author": {
+        "name": "kalman03"
+    },
+    "bugs": {
+        "url": "https://github.com/jingxiang/gitbook-plugin-theme-fexa/issues"
+    },
+    "dependencies": {},
+    "description": "Gitbook theme for xinbeitime docs",
+    "engines": {
+        "gitbook": ">=3.0.0"
+    },
+    "homepage": "https://github.com/jingxiang/gitbook-plugin-theme-fexa#readme",
+    "keywords": [
+        "gitbook",
+        "theme",
+        "xinbeitime"
+    ],
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jingxiang/gitbook-plugin-theme-fexa.git"
+    },
+    "scripts": {},
+    "version": "1.0.3"
 }

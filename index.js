@@ -12,7 +12,7 @@ module.exports = {
         ]
     },
     hooks: {
-        finish: function () {
+        finish: function() {
             var configOption = this.config.get('pluginsConfig')['theme-xinbeitime'];
             var output = configOption ? (configOption.output || '_book') : '_book';
             var pathFile;
@@ -39,9 +39,9 @@ module.exports = {
 
             //logo
             pathFile = configOption && configOption.logo;
-            if(pathFile){
+            if (pathFile) {
                 var logoPath = path.join(process.cwd(), pathFile);
-                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook','gitbook-plugin-theme-xinbeitime',"logo.png");
+                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook', 'gitbook-plugin-theme-xinbeitime', "logo.png");
                 if (fs.existsSync(logoPath)) {
                     fs.writeFileSync(pluginLogoPath, fs.readFileSync(logoPath));
                 }
