@@ -5,15 +5,15 @@ module.exports = {
     website: {
         assets: './_assets/',
         js: [
-            'fexa.js'
+            'xinbeitime.js'
         ],
         css: [
-            'fexa.css'
+            'xinbeitime.css'
         ]
     },
     hooks: {
         finish: function () {
-            var configOption = this.config.get('pluginsConfig')['theme-fexa'];
+            var configOption = this.config.get('pluginsConfig')['theme-xinbeitime'];
             var output = configOption ? (configOption.output || '_book') : '_book';
             var pathFile;
 
@@ -41,7 +41,7 @@ module.exports = {
             pathFile = configOption && configOption.logo;
             if(pathFile){
                 var logoPath = path.join(process.cwd(), pathFile);
-                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook','gitbook-plugin-theme-fexa',"logo.png");
+                var pluginLogoPath = path.join(process.cwd(), output, 'gitbook','gitbook-plugin-theme-xinbeitime',"logo.png");
                 if (fs.existsSync(logoPath)) {
                     fs.writeFileSync(pluginLogoPath, fs.readFileSync(logoPath));
                 }
