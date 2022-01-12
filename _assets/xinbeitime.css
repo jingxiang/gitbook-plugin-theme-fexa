@@ -203,8 +203,8 @@ body {
 /* Book  anchor*/
 
 .book-anchor {
-    position: absolute;
     width: 180px;
+    position: absolute;
     top: 130px;
     right: 30px;
     padding: 0 10px 10px 10px;
