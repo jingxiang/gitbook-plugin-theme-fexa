@@ -169,11 +169,11 @@ body {
 
 .header-inner .header-nav li a:hover,
 .header-inner .header-nav li a.active {
-    color: #f34d4d;
+    color: #5D73D8;
 }
 
 .header-inner .header-nav li a.active:hover {
-    cursor: #f34d4d;
+    cursor: #5D73D8;
 }
 
 @media (max-width: 768px) {
@@ -230,12 +230,12 @@ body {
 }
 
 .book-anchor a:hover {
-    color: #f34d4d;
+    color: #5D73D8;
     text-decoration: none;
 }
 
 .book-anchor .selected {
-    color: #f34d4d;
+    color: #5D73D8;
     text-decoration: none;
     font-weight: bold;
 }
