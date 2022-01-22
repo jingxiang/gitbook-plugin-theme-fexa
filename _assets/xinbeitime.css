@@ -200,9 +200,6 @@ body {
     .footer-modification {
         float: none;
     }
-    .header-inner .title {
-        display: none;
-    }
 }
 
 
@@ -279,4 +276,8 @@ body {
 
 .footer-modification {
     float: right;
+}
+
+.header-inner .title {
+    display: none;
 }
