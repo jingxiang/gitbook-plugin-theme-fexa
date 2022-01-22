@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-
+var moment = require('moment');
 module.exports = {
     website: {
         assets: './_assets/',
@@ -46,6 +46,32 @@ module.exports = {
                     fs.writeFileSync(pluginLogoPath, fs.readFileSync(logoPath));
                 }
             }
+        },
+        'page:before': function(page) {
+            var _label = 'Last Modify: ',
+                _format = 'YYYY-MM-DD HH:mm:ss',
+                _copy = ''
+            var configOption = this.config.get('pluginsConfig')['theme-xinbeitime'];
+            if (configOption) {
+                _label = configOption['modify_label'] || _label;
+                _format = configOption['modify_format'] || _format;
+
+                var _c = configOption['copyright'];
+                _copy = _c ? _c + ' all right reserved.' + _copy : _copy;
+            }
+            var _copy = '<span class="copyright">' + _copy + '</span>'
+            var str = ' \n\n<footer class="page-footer">' + _copy +
+                '<span class="footer-modification">' +
+                _label +
+                '\n{{file.mtime | date("' + _format +
+                '")}}\n</span></footer>'
+            page.content = page.content + str;
+            return page;
+        }
+    },
+    filters: {
+        date: function(d, format) {
+            return moment(d).format(format)
         }
     }
 };
