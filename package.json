@@ -6,7 +6,9 @@
     "bugs": {
         "url": "https://github.com/jingxiang/gitbook-plugin-theme-fexa/issues"
     },
-    "dependencies": {},
+    "dependencies": {
+		"moment": "^2.10.6"
+	},
     "description": "Gitbook theme for xinbeitime docs",
     "engines": {
         "gitbook": ">=3.0.0"
@@ -23,5 +25,5 @@
         "url": "git+https://github.com/jingxiang/gitbook-plugin-theme-fexa.git"
     },
     "scripts": {},
-    "version": "1.0.6"
+    "version": "1.0.7"
 }
