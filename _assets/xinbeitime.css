@@ -125,7 +125,7 @@ body {
     float: left;
     height: 60px;
     width: 140px;
-    background: url(./logo.svg);
+    background: url(./logo.png);
     background-size: 140px 60px;
     background-repeat: no-repeat;
 }
